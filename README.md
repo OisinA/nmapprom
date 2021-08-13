@@ -105,13 +105,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/OisinA/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/OisinA/nmapprom.svg?style=for-the-badge
 [contributors-url]: https://github.com/OisinA/nmapprom/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/OisinA/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/OisinA/nmapprom.svg?style=for-the-badge
 [forks-url]: https://github.com/OisinA/nmapprom/network/members
-[stars-shield]: https://img.shields.io/github/stars/OisinA/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/OisinA/nmapprom.svg?style=for-the-badge
 [stars-url]: https://github.com/OisinA/nmapprom/stargazers
-[issues-shield]: https://img.shields.io/github/issues/OisinA/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/OisinA/nmapprom.svg?style=for-the-badge
 [issues-url]: https://github.com/OisinA/nmapprom/issues
-[license-shield]: https://img.shields.io/github/license/OisinA/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/OisinA/nmapprom.svg?style=for-the-badge
 [license-url]: https://github.com/OisinA/nmapprom/blob/master/LICENSE.txt
