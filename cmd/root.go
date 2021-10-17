@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"os/exec"
 	"regexp"
@@ -91,18 +92,24 @@ func runServer() error {
 // Run nmap and pass the output into a channel.
 func runNmapChan(channel *chan int) {
 	// Run the nmap command.
-	out, err := exec.Command("nmap", "-sn", "192.168.0.0/24").Output()
+	log.Println("run nmap")
+
+	// networkRange := os.Getenv("NETWORK_RANGE")
+	out, err := exec.Command("nmap", "-sn", ipRange, "-T5").Output()
 	if err != nil {
 		panic(err)
 	}
 
 	// Parse the output to get the number of hosts.
-	m := regexp.MustCompile(`\d+ hosts up`)
+	m := regexp.MustCompile(`\d+ hosts? up`)
 	res := strings.Split(m.FindStringSubmatch(string(out))[0], " ")
 	in, err := strconv.Atoi(res[0])
 	if err != nil {
 		panic(err)
 	}
+
+	log.Print("network scan finished")
+	log.Println(res)
 
 	// Pass the number of hosts up to the chi http server through the channel.
 	*channel <- in
